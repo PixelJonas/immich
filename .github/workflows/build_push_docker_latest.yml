@@ -9,7 +9,7 @@ jobs:
   # This image include both the server and microservices - the two containers can be slitted into separated
   # service with its coressponding entry file.
   build_and_push_server_monorepo_latest:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -46,7 +46,7 @@ jobs:
             ghcr.io/${{ github.repository_owner }}/immich-server:latest
 
   build_and_push_machine_learning_latest:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -83,7 +83,7 @@ jobs:
             ghcr.io/${{ github.repository_owner }}/immich-machine-learning:latest
 
   build_and_push_web_latest:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -118,7 +118,7 @@ jobs:
             ghcr.io/${{ github.repository_owner }}/immich-web:latest
 
   build_and_push_nginx_latest:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout
         uses: actions/checkout@v3
