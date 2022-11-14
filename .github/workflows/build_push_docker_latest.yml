@@ -50,7 +50,7 @@ jobs:
           cache-to: type=gha,mode=max
           tags: |
             altran1502/immich-server:latest
-            ghcr.io/${{ github.repository_owner }}/immich-server:latest
+            ghcr.io/pixeljonas/immich-server:latest
 
   build_and_push_machine_learning_latest:
     runs-on: self-hosted
@@ -83,7 +83,7 @@ jobs:
           cache-to: type=gha,mode=max
           tags: |
             altran1502/immich-machine-learning:latest
-            ghcr.io/${{ github.repository_owner }}/immich-machine-learning:latest
+            ghcr.io/pixeljonas/immich-machine-learning:latest
 
   build_and_push_web_latest:
     runs-on: self-hosted
@@ -114,7 +114,7 @@ jobs:
           push: true
           tags: |
             altran1502/immich-web:latest
-            ghcr.io/${{ github.repository_owner }}/immich-web:latest
+            ghcr.io/pixeljonas/immich-web:latest
 
   build_and_push_nginx_latest:
     runs-on: self-hosted
@@ -144,4 +144,4 @@ jobs:
           push: true
           tags: |
             altran1502/immich-proxy:latest
-            ghcr.io/${{ github.repository_owner }}/immich-proxy:latest
+            ghcr.io/pixeljonas/immich-proxy:latest
